@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "Z45+6h3yGWSt/b45PLk+mSGNGsQD6JtMnLx60aG6N9k=",
+  "Source": "LudoGame.User.Api",
+  "BasePath": "_content/LudoGame.User.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
