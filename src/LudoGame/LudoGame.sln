@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LudoGame.User.Api", "LudoGame.User.Api\LudoGame.User.Api.csproj", "{827CE77D-0DFF-47D8-B0A2-85999C95BB80}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LudoGame.User.Application", "LudoGame.User.Application\LudoGame.User.Application.csproj", "{0CC8F3A9-F9D1-4CD2-9592-059E03C25FB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LudoGame.User.Domain", "LudoGame.User.Domain\LudoGame.User.Domain.csproj", "{F3CCDBAC-2396-42E8-A01D-77B2F80B4704}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LudoGame.User.Infrastructure", "LudoGame.User.Infrastructure\LudoGame.User.Infrastructure.csproj", "{8A652F7D-7A6E-4252-8F49-04C52421AC14}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{827CE77D-0DFF-47D8-B0A2-85999C95BB80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{827CE77D-0DFF-47D8-B0A2-85999C95BB80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{827CE77D-0DFF-47D8-B0A2-85999C95BB80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{827CE77D-0DFF-47D8-B0A2-85999C95BB80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CC8F3A9-F9D1-4CD2-9592-059E03C25FB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CC8F3A9-F9D1-4CD2-9592-059E03C25FB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CC8F3A9-F9D1-4CD2-9592-059E03C25FB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CC8F3A9-F9D1-4CD2-9592-059E03C25FB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3CCDBAC-2396-42E8-A01D-77B2F80B4704}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3CCDBAC-2396-42E8-A01D-77B2F80B4704}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3CCDBAC-2396-42E8-A01D-77B2F80B4704}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3CCDBAC-2396-42E8-A01D-77B2F80B4704}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A652F7D-7A6E-4252-8F49-04C52421AC14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A652F7D-7A6E-4252-8F49-04C52421AC14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A652F7D-7A6E-4252-8F49-04C52421AC14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A652F7D-7A6E-4252-8F49-04C52421AC14}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
