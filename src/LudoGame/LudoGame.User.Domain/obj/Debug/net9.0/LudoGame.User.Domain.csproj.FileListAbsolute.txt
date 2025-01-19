@@ -9,3 +9,4 @@ C:\Users\arafa\OneDrive\Desktop\Practice project\dot net projects\LudoGame-test\
 C:\Users\arafa\OneDrive\Desktop\Practice project\dot net projects\LudoGame-test\src\LudoGame\LudoGame.User.Domain\obj\Debug\net9.0\refint\LudoGame.User.Domain.dll
 C:\Users\arafa\OneDrive\Desktop\Practice project\dot net projects\LudoGame-test\src\LudoGame\LudoGame.User.Domain\obj\Debug\net9.0\LudoGame.User.Domain.pdb
 C:\Users\arafa\OneDrive\Desktop\Practice project\dot net projects\LudoGame-test\src\LudoGame\LudoGame.User.Domain\obj\Debug\net9.0\ref\LudoGame.User.Domain.dll
+C:\Users\arafa\OneDrive\Desktop\Practice project\dot net projects\LudoGame-test\src\LudoGame\LudoGame.User.Domain\obj\Debug\net9.0\LudoGame.User.Domain.sourcelink.json

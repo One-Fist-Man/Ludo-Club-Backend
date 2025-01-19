@@ -10,7 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 
-builder.Services.AddDbContextPool<ApplicationDbContext>(opt => opt.UseNpgsql("Server=192.168.68.92;Port=5011;Database=LudoGame.User;User Id=postgres; Password=123456;"));
+builder.Services.AddDbContextPool<ApplicationDbContext>(opt => opt.UseNpgsql("Server=localhost;Port=5432;Database=LudoGame;Username=postgres;Password=123456;"));
 
 var app = builder.Build();
 
@@ -23,7 +23,7 @@ if (app.Environment.IsDevelopment())
 
 app.MapPost("/calculate", (CalculateModel model) =>
 {
-    Console.WriteLine("chekc->", model.Value1);
+    Console.WriteLine($"check -> {model}");
     var service = new CalculateService();
     return service.Calculate(model);
 }
