@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "xejb3zKV3+g=",
+  "dgSpecHash": "AcKabbxXnYM=",
   "success": true,
   "projectFilePath": "C:\\Users\\arafa\\OneDrive\\Desktop\\Practice project\\dot net projects\\LudoGame-test\\src\\LudoGame\\LudoGame.User.Infrastructure\\LudoGame.User.Infrastructure.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\arafa\\.nuget\\packages\\mediatr\\12.4.1\\mediatr.12.4.1.nupkg.sha512",
+    "C:\\Users\\arafa\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\arafa\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.1\\microsoft.entityframeworkcore.9.0.1.nupkg.sha512",
     "C:\\Users\\arafa\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\9.0.1\\microsoft.entityframeworkcore.abstractions.9.0.1.nupkg.sha512",
     "C:\\Users\\arafa\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\9.0.1\\microsoft.entityframeworkcore.analyzers.9.0.1.nupkg.sha512",

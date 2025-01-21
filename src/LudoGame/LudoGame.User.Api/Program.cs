@@ -4,8 +4,9 @@ using LudoGame.User.Application.Calculator.Models;
 using LudoGame.User.Application.Interfaces;
 using LudoGame.User.Infrastructure.DataBase;
 using LudoGame.User.Infrastructure.Repositories;
+using MediatR;
 using Microsoft.EntityFrameworkCore;
-
+using LudoGame.User.Application.Calculator.Handlers;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -32,4 +33,9 @@ app.MapPost("/calculate", async (CalculateModel model,ICalculateService service)
     return await service.Calculate(model);
 }
     );
+
+app.Map("/calculate-handler", async (CreateOperationCommand command, IMediator mediator) =>
+{
+    return await mediator.Send(command);
+});
 app.Run();
