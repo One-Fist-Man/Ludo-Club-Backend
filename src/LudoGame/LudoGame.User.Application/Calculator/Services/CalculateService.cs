@@ -1,8 +1,12 @@
-﻿namespace LudoGame.User.Application.Calculator.Models;
+﻿using LudoGame.User.Application.Interfaces;
 
-public class CalculateService()
+namespace LudoGame.User.Application.Calculator.Models;
+
+
+public class CalculateService(IRepository<Operation> repository) : ICalculateService
 {
-    public int Calculate(CalculateModel model)
+    private readonly IRepository<Operation> _repository =repository;
+    public async Task<int> Calculate(CalculateModel model)
     {
         var result = 0;
         if (model.Operation == "+") { 
@@ -20,6 +24,10 @@ public class CalculateService()
         {
             result = model.Value1 / model.Value2;
         }
+
+        var operation = new Operation()
+            .Create(model.Value1, model.Value2, model.Operation);
+        await _repository.AddAsync(operation);
         
         return result;
     }

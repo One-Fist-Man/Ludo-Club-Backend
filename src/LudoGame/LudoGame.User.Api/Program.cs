@@ -1,16 +1,21 @@
 
 using LudoGame.User.Application.Calculator;
 using LudoGame.User.Application.Calculator.Models;
+using LudoGame.User.Application.Interfaces;
 using LudoGame.User.Infrastructure.DataBase;
+using LudoGame.User.Infrastructure.Repositories;
+using MediatR;
 using Microsoft.EntityFrameworkCore;
-
+using LudoGame.User.Application.Calculator.Handlers;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 
-builder.Services.AddDbContextPool<ApplicationDbContext>(opt => opt.UseNpgsql("Server=192.168.68.92;Port=5011;Database=LudoGame.User;User Id=postgres; Password=123456;"));
+builder.Services.AddDbContextPool<ApplicationDbContext>(opt => opt.UseNpgsql("Server=localhost;Port=5432;Database=LudoGame;Username=postgres;Password=123456;"));
+builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+builder.Services.AddScoped<ICalculateService,CalculateService>(); 
 
 var app = builder.Build();
 
@@ -21,11 +26,16 @@ if (app.Environment.IsDevelopment())
 }
 
 
-app.MapPost("/calculate", (CalculateModel model) =>
+app.MapPost("/calculate", async (CalculateModel model,ICalculateService service) =>
 {
-    Console.WriteLine("chekc->", model.Value1);
-    var service = new CalculateService();
-    return service.Calculate(model);
+    Console.WriteLine($"check -> {model}");
+    //var service = new CalculateService();
+    return await service.Calculate(model);
 }
     );
+
+app.Map("/calculate-handler", async (CreateOperationCommand command, IMediator mediator) =>
+{
+    return await mediator.Send(command);
+});
 app.Run();

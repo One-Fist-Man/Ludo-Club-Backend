@@ -15,3 +15,4 @@ C:\Users\arafa\OneDrive\Desktop\Practice project\dot net projects\LudoGame-test\
 C:\Users\arafa\OneDrive\Desktop\Practice project\dot net projects\LudoGame-test\src\LudoGame\LudoGame.User.Infrastructure\bin\Debug\net9.0\LudoGame.User.Domain.pdb
 C:\Users\arafa\OneDrive\Desktop\Practice project\dot net projects\LudoGame-test\src\LudoGame\LudoGame.User.Infrastructure\obj\Debug\net9.0\LudoGame.User.Infrastructure.csproj.AssemblyReference.cache
 C:\Users\arafa\OneDrive\Desktop\Practice project\dot net projects\LudoGame-test\src\LudoGame\LudoGame.User.Infrastructure\obj\Debug\net9.0\LudoGame.C3E00D48.Up2Date
+C:\Users\arafa\OneDrive\Desktop\Practice project\dot net projects\LudoGame-test\src\LudoGame\LudoGame.User.Infrastructure\obj\Debug\net9.0\LudoGame.User.Infrastructure.sourcelink.json
