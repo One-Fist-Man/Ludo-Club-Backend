@@ -7,16 +7,24 @@ using LudoGame.User.Infrastructure.Repositories;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using LudoGame.User.Application.Calculator.Handlers;
+using LudoGame.User.Application.Startup;
+using LudoGame.User.Infrastructure.Startup;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 
-builder.Services.AddDbContextPool<ApplicationDbContext>(opt => opt.UseNpgsql("Server=localhost;Port=5432;Database=LudoGame;Username=postgres;Password=123456;"));
-builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
-builder.Services.AddScoped<ICalculateService,CalculateService>();
-builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(CalculateService).Assembly));
+//builder.Services.AddDbContextPool<ApplicationDbContext>(opt => opt.UseNpgsql("Server=localhost;Port=5432;Database=LudoGame;Username=postgres;Password=123456;"));
+//builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+//builder.Services.AddScoped<ICalculateService,CalculateService>();
+//builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(CalculateService).Assembly));
+
+builder.Services
+    .ConfigureApplicationServices()
+    .ConfigureInfrastructureServices(builder.Configuration);
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LudoGame.User.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+db2c59420faa92449fb5d2f36682ea7732fe21a1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2c389a64a88d504926f99488f62b51a8e00096f4")]
 [assembly: System.Reflection.AssemblyProductAttribute("LudoGame.User.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LudoGame.User.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
