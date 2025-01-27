@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "h1r+pyaG+Wc=",
-  "success": true,
+  "dgSpecHash": "GyxRgEYxzX0=",
+  "success": false,
   "projectFilePath": "C:\\Users\\arafa\\OneDrive\\Desktop\\Practice project\\dot net projects\\LudoGame-test\\src\\LudoGame\\LudoGame.User.Infrastructure\\LudoGame.User.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\arafa\\.nuget\\packages\\mediatr\\12.4.1\\mediatr.12.4.1.nupkg.sha512",
@@ -27,5 +27,15 @@
     "C:\\Users\\arafa\\.nuget\\packages\\npgsql\\9.0.2\\npgsql.9.0.2.nupkg.sha512",
     "C:\\Users\\arafa\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\9.0.3\\npgsql.entityframeworkcore.postgresql.9.0.3.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1105",
+      "level": "Error",
+      "message": "Unable to find project information for 'C:\\Users\\arafa\\OneDrive\\Desktop\\Practice project\\dot net projects\\ForeverAspirants.Core\\src\\ForeverAspirants.Common\\ForeverAspirants.Common.csproj'. If you are using Visual Studio, this may be because the project is unloaded or not part of the current solution so run a restore from the command-line. Otherwise, the project file may be invalid or missing targets required for restore.",
+      "libraryId": "C:\\Users\\arafa\\OneDrive\\Desktop\\Practice project\\dot net projects\\ForeverAspirants.Core\\src\\ForeverAspirants.Common\\ForeverAspirants.Common.csproj",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    }
+  ]
 }

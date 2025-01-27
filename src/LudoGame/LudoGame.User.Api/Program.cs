@@ -34,16 +34,23 @@ if (app.Environment.IsDevelopment())
 }
 
 
-app.MapPost("/calculate", async (CalculateModel model,ICalculateService service) =>
-{
-    Console.WriteLine($"check -> {model}");
-    //var service = new CalculateService();
-    return await service.Calculate(model);
-}
-    );
+//app.MapPost("/calculate", async (CalculateModel model,ICalculateService service) =>
+//{
+//    Console.WriteLine($"check -> {model}");
+//    //var service = new CalculateService();
+//    return await service.Calculate(model);
+//}
+//    );
 
-app.Map("/calculate-handler", async (CreateOperationCommand command, IMediator mediator) =>
+//app.Map("/calculate-handler", async (CreateOperationCommand command, IMediator mediator) =>
+//{
+//    return await mediator.Send(command);
+//});
+
+app.MapGet("/our-very-first-api", () =>
 {
-    return await mediator.Send(command);
+    return "ok";
 });
+
+
 app.Run();

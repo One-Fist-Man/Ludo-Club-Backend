@@ -9,8 +9,11 @@ using LudoGame.User.Infrastructure.DbContextes;
 using Microsoft.EntityFrameworkCore;
 using LudoGame.User.Application.Common.Interface;
 using LudoGame.User.Infrastructure.Repositories;
-namespace LudoGame.User.Infrastructure.Startup;
+using LudoGame.User.Domain;
+using LudoGame.User.Domain.Player;
 
+
+namespace LudoGame.User.Infrastructure.Startup;
 public static class StartupApplication
 {
     public static IServiceCollection ConfigureInfrastructureServices( this IServiceCollection services, IConfiguration configuration)
@@ -30,5 +33,32 @@ public static class StartupApplication
     private static void AddRepository(IServiceCollection services)
     {
         services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+    }
+
+    private static void AddIdentity(IServiceCollection services, IConfiguration configuration)
+    {
+        services.AddIdentityCore<Player>().AddEntityFrameworkStores<ApplicationDbContext>();
+
+        var tokenValidationParameter = new TokenValidationParameters
+        {
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidateLifetime = true,
+            ValidateIssuerSigningKey = true,
+            RequireExpirationTime = true,
+            ValidAudience = configuration["JWT:ValidAudience"],
+            ValidIssuer = configuration["JWT:ValidIssuer"],
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["JWT:Secret"]!))
+        };
+
+        services.AddAuthentication(IdentityConstants.BearerScheme)
+                .AddJwtBearer(cfg =>
+                {
+                    cfg.SaveToken = true;
+                    cfg.RequireHttpsMetadata = false;
+                    cfg.TokenValidationParameters = tokenValidationParameter;
+
+                });
+    
     }
 }

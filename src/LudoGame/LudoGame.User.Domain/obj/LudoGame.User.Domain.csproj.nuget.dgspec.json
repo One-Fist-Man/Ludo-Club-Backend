@@ -31,7 +31,11 @@
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\arafa\\OneDrive\\Desktop\\Practice project\\dot net projects\\ForeverAspirants.Core\\src\\ForeverAspirants.Common\\ForeverAspirants.Common.csproj": {
+                "projectPath": "C:\\Users\\arafa\\OneDrive\\Desktop\\Practice project\\dot net projects\\ForeverAspirants.Core\\src\\ForeverAspirants.Common\\ForeverAspirants.Common.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
