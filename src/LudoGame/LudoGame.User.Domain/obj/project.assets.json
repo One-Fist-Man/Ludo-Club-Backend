@@ -312,6 +312,16 @@
         "build": {
           "buildTransitive/net8.0/_._": {}
         }
+      },
+      "ForeverAspirants.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/ForeverAspirants.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ForeverAspirants.Common.dll": {}
+        }
       }
     }
   },
@@ -784,11 +794,16 @@
         "microsoft.extensions.primitives.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "ForeverAspirants.Common/1.0.0": {
+      "type": "project",
+      "path": "../../../../ForeverAspirants.Core/src/ForeverAspirants.Common/ForeverAspirants.Common.csproj",
+      "msbuildProject": "../../../../ForeverAspirants.Core/src/ForeverAspirants.Common/ForeverAspirants.Common.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "C:\\Users\\arafa\\OneDrive\\Desktop\\Practice project\\dot net projects\\ForeverAspirants.Core\\src\\ForeverAspirants.Common\\ForeverAspirants.Common.csproj",
+      "ForeverAspirants.Common >= 1.0.0",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 9.0.1"
     ]
   },
@@ -870,16 +885,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1105",
-      "level": "Error",
-      "message": "Unable to find project information for 'C:\\Users\\arafa\\OneDrive\\Desktop\\Practice project\\dot net projects\\ForeverAspirants.Core\\src\\ForeverAspirants.Common\\ForeverAspirants.Common.csproj'. If you are using Visual Studio, this may be because the project is unloaded or not part of the current solution so run a restore from the command-line. Otherwise, the project file may be invalid or missing targets required for restore.",
-      "libraryId": "C:\\Users\\arafa\\OneDrive\\Desktop\\Practice project\\dot net projects\\ForeverAspirants.Core\\src\\ForeverAspirants.Common\\ForeverAspirants.Common.csproj",
-      "targetGraphs": [
-        "net9.0"
-      ]
-    }
-  ]
+  }
 }

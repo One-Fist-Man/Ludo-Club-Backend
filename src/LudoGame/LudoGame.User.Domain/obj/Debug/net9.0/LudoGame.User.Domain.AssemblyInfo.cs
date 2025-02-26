@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LudoGame.User.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+86976dac6a21798a4eeec752857242f82089b903")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d365d3ba362fd819049dc5c2c7f6950c7c346f69")]
 [assembly: System.Reflection.AssemblyProductAttribute("LudoGame.User.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LudoGame.User.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

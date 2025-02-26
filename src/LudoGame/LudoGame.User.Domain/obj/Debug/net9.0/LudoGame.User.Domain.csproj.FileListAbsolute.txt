@@ -10,3 +10,7 @@ C:\Users\arafa\OneDrive\Desktop\Practice project\dot net projects\LudoGame-test\
 C:\Users\arafa\OneDrive\Desktop\Practice project\dot net projects\LudoGame-test\src\LudoGame\LudoGame.User.Domain\obj\Debug\net9.0\LudoGame.User.Domain.pdb
 C:\Users\arafa\OneDrive\Desktop\Practice project\dot net projects\LudoGame-test\src\LudoGame\LudoGame.User.Domain\obj\Debug\net9.0\ref\LudoGame.User.Domain.dll
 C:\Users\arafa\OneDrive\Desktop\Practice project\dot net projects\LudoGame-test\src\LudoGame\LudoGame.User.Domain\obj\Debug\net9.0\LudoGame.User.Domain.sourcelink.json
+C:\Users\arafa\OneDrive\Desktop\Practice project\dot net projects\LudoGame-test\src\LudoGame\LudoGame.User.Domain\bin\Debug\net9.0\ForeverAspirants.Common.dll
+C:\Users\arafa\OneDrive\Desktop\Practice project\dot net projects\LudoGame-test\src\LudoGame\LudoGame.User.Domain\bin\Debug\net9.0\ForeverAspirants.Common.pdb
+C:\Users\arafa\OneDrive\Desktop\Practice project\dot net projects\LudoGame-test\src\LudoGame\LudoGame.User.Domain\obj\Debug\net9.0\LudoGame.User.Domain.csproj.AssemblyReference.cache
+C:\Users\arafa\OneDrive\Desktop\Practice project\dot net projects\LudoGame-test\src\LudoGame\LudoGame.User.Domain\obj\Debug\net9.0\LudoGame.3726BC6A.Up2Date

@@ -11,6 +11,11 @@ using LudoGame.User.Application.Common.Interface;
 using LudoGame.User.Infrastructure.Repositories;
 using LudoGame.User.Domain;
 using LudoGame.User.Domain.Player;
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.AspNetCore.Identity;
+using LudoGame.User.Infrastructure.Abstractions;
+using LudoGame.User.Infrastructure.Authentication;
+using Microsoft.AspNetCore.Authorization;
 
 
 namespace LudoGame.User.Infrastructure.Startup;
@@ -59,6 +64,9 @@ public static class StartupApplication
                     cfg.TokenValidationParameters = tokenValidationParameter;
 
                 });
+
+        services.AddScoped<IPlayerManager, PlayerManager>();
+        services.AddScoped<IAuthorizationService, AuthenticationService>();
     
     }
 }

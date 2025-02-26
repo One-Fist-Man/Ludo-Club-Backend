@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ForeverAspirants.Common;
 using MediatR;
 
 namespace LudoGame.User.Application.Abstractions.Messaging;
@@ -15,7 +16,8 @@ public interface ICommand<TResponse>
 
 }
 
-public interface ICommandHandler<TCommand>:IRequestHandler<TCommand,Result> where TCommand:ICommand
+public interface ICommandHandler<TCommand>:
+    IRequestHandler<TCommand,Result> where TCommand:ICommand
 {
 
 }
